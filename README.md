@@ -2,14 +2,26 @@
 [![](https://travis-ci.org/onjin/werkzeug-rfc7xx.svg)](https://travis-ci.org/onjin/werkzeug-rfc7xx)
 # werkzeug RFC 7XX exceptions
 
-Additional werkzeuk/flask exception according to RFX 7XX:
+Additional werkzeuk/flask exceptions according to **RFX 7XX**:
 
 * https://github.com/joho/7XX-rfc
 
 
-Usage:
+Usage with **flask**:
 
-  import werkzeug_rfc7xx
-  from werkzeug.exceptions import abort
+```python
+import werkzeug_rfc7xx
+from flask import abort
 
-  abort(701)
+abort(701)
+```
+
+Usage with **werkzeug**:
+
+```python
+import werkzeug_rfc7xx
+from werkzeug.exceptions import abort
+
+abort(701)
+```
+
