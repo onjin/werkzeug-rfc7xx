@@ -2,7 +2,7 @@
 import re
 import sys
 
-from werkzeug.exceptions import HTTPException, abort
+from werkzeug.exceptions import HTTPException, _aborter
 import werkzeug.http
 
 
@@ -142,7 +142,7 @@ for code, msg in ERRORS:
     class_obj.name = property(name)
 
     setattr(sys.modules[__name__], class_name, class_obj)
-    abort.mapping.update({
+    _aborter.mapping.update({
         code: class_obj
     })
     werkzeug.http.HTTP_STATUS_CODES.update({

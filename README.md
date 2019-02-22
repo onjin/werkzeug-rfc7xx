@@ -6,6 +6,10 @@ Additional werkzeuk/flask exceptions according to **RFX 7XX**:
 
 * https://github.com/joho/7XX-rfc
 
+Installation:
+
+  pip install werkzeug-rfc7xx
+
 
 Usage with **flask**:
 

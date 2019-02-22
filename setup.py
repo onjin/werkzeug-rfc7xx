@@ -10,7 +10,7 @@ from setuptools import setup
 
 
 name = 'werkzeug-rfc7xx'
-version = '1.0.0'
+version = '1.1.0'
 
 setup(
     name=name,
